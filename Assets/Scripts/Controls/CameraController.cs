@@ -14,7 +14,7 @@ namespace TaxiManager.Controls
         private float _rotation;
         private Vector3 _zoomMovement;
 
-        public void Update()
+        private void Update()
         {
             transform.position += _panMovement;
             transform.RotateAround(transform.position, Vector3.up, _rotation);
